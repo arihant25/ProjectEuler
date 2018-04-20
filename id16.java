@@ -1,6 +1,6 @@
 import java.math.BigInteger;
 
-public class id15 {
+public class id16 {
     public static void main(String[] args) {
         BigInteger two = BigInteger.valueOf(2);
         BigInteger power = two.pow(1000);
