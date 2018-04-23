@@ -16,7 +16,7 @@ public class id50 {
 
         int answer = 0;
         int compare = 0;
-        for (int i = 2; i < n / 100; i++) {
+        for (int i = 2; i < 10000; i++) {
             int sum = 0;
             int count = 0;
             for (int j = i; j < n; j++) {
