@@ -1,3 +1,5 @@
+//referenced from https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
+
 public class id47 {
     public static void main(String[] args) {
         int n = 10000000;
