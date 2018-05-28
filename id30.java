@@ -9,7 +9,7 @@ public class id30 {
             double sum = 0;
             for (int j = 0; j < numArray.length; j++)
                 sum = sum + Math.pow(numArray[j], 5);
-            if ((int)sum == i)
+            if ((int) sum == i)
                 answer = answer + i;
         }
         System.out.println(answer);

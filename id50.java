@@ -1,5 +1,4 @@
-//can be resolved iterating over primes rather than over all numbers
-//referenced from https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
+//Referenced from https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
 
 public class id50 {
     public static void main(String[] args) {

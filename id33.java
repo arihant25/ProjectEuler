@@ -25,14 +25,12 @@ public class id33 {
         System.out.println(tempDeno / (num + deno));
     }
 
-    //Referenced from stack overflow
-    private static int[] toArray(double x) {
-        String s = Integer.toString((int) x);
-        int[] result = new int[s.length()];
-        for (int i = 0; i < s.length(); i++) {
-            result[i] = Integer.parseInt(String.valueOf(s.charAt(i)));
+    private static int[] toArray(double num) {
+        String[] temp = Long.toString((int)num).split("");
+        int[] answer = new int[temp.length];
+        for (int i = 0; i < temp.length; i++) {
+            answer[i] = Integer.parseInt(temp[i]);
         }
-        return result;
+        return answer;
     }
-
 }

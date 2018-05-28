@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class id41 {
     public static void main(String[] args) {
-        int n = 999999999;
+        int n = 10000000;
         boolean[] primeArr = new boolean[n + 1];
         for (int i = 2; i <= n; i++)
             primeArr[i] = true;
@@ -14,14 +14,11 @@ public class id41 {
                 for (int j = i; j * i <= n; j++)
                     primeArr[i * j] = false;
 
-        int count = 0;
         int max = 0;
         for (int i = 2; i <= n; i++) {
             if (primeArr[i])
-                if (isPandigital(i)) {
+                if (isPandigital(i))
                     max = i;
-                    count++;
-                }
         }
         System.out.println(max);
     }

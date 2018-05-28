@@ -104,12 +104,11 @@ public class id13 {
                 "20849603980134001723930671666823555245252804609722",
                 "53503534226472524250874054075591789781264330331690",
         };
-        int zero = 0;
-        BigInteger answer = BigInteger.valueOf(zero);
-        for (int i=0; i<numbers.length; i++) {
+        BigInteger answer = BigInteger.ZERO;
+        for (int i = 0; i < numbers.length; i++) {
             BigInteger sum = new BigInteger(numbers[i]);
             answer = answer.add(sum);
         }
-        System.out.println(answer.toString().substring(0,10));
+        System.out.println(answer.toString().substring(0, 10));
     }
 }

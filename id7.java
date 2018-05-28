@@ -1,7 +1,7 @@
 public class id7 {
     public static void main(String[] args) {
         int count = 0;
-        int i=2;
+        int i = 2;
         while (true) {
             if (isPrime(i)) {
                 count++;
@@ -13,10 +13,10 @@ public class id7 {
             i++;
         }
     }
+
     private static boolean isPrime(long check) {
-        for (long i=2; i<check; i++) {
-            if (check%i == 0) return false;
-        }
+        for (long i = 2; i < check; i++)
+            if (check % i == 0) return false;
         return true;
     }
 }

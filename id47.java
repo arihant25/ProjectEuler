@@ -28,10 +28,8 @@ public class id47 {
                 if (primeArr[i])
                     count++;
         }
-
         if (count == 4)
             return true;
-
         return false;
     }
 }

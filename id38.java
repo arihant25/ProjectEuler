@@ -10,9 +10,8 @@ public class id38 {
                     str = str.concat(Integer.toString(i * j));
                 }
                 if (isPandigital(str))
-                    if (max < Integer.parseInt(str)) {
+                    if (max < Integer.parseInt(str))
                         max = Integer.parseInt(str);
-                    }
             }
         }
         System.out.println(max);

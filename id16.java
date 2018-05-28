@@ -6,20 +6,18 @@ public class id16 {
         BigInteger power = two.pow(1000);
         int[] result = toArray(power);
         long answer = 0;
-        for (int i=0; i<result.length; i++) {
+        for (int i = 0; i < result.length; i++) {
             answer = answer + result[i];
         }
         System.out.println(answer);
     }
 
-    //Referenced from stack overflow
-    private static int[] toArray(BigInteger x) {
-        String s = x.toString();
-        int[] result = new int[s.length()];
-        for (int i = 0; i < s.length(); i++) {
-            result[i] = Integer.parseInt(String.valueOf(s.charAt(i)));
+    private static int[] toArray(BigInteger num) {
+        String[] temp = num.toString().split("");
+        int[] answer = new int[temp.length];
+        for (int i = 0; i < temp.length; i++) {
+            answer[i] = Integer.parseInt(temp[i]);
         }
-        return result;
+        return answer;
     }
-
 }

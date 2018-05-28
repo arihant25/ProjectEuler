@@ -1,6 +1,6 @@
 public class id60 {
     public static void main(String[] args) {
-        int n = 1000000000;
+        int n = 100000000;
         boolean[] primeArr = new boolean[n + 1];
 
         for (int i = 2; i < n; i++)

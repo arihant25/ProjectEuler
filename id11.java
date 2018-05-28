@@ -42,7 +42,7 @@ public class id11 {
                         answer = temp;
                 }
                 if (i < 17 && j < 17) {
-                    temp = grid[i][j+3] * grid[i + 1][j + 2] * grid[i + 2][j + 1] * grid[i + 3][j];
+                    temp = grid[i][j + 3] * grid[i + 1][j + 2] * grid[i + 2][j + 1] * grid[i + 3][j];
                     if (answer < temp)
                         answer = temp;
                 }

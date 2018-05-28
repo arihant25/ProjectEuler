@@ -14,13 +14,12 @@ public class id35 {
         System.out.println(count);
     }
 
-    private static int[] toArray(int x) {
-        String s = Integer.toString(x);
-        int[] result = new int[s.length()];
-        for (int i = 0; i < s.length(); i++) {
-            result[i] = Integer.parseInt(String.valueOf(s.charAt(i)));
-        }
-        return result;
+    private static int[] toArray(double num) {
+        String[] temp = Long.toString((int) num).split("");
+        int[] answer = new int[temp.length];
+        for (int i = 0; i < temp.length; i++)
+            answer[i] = Integer.parseInt(temp[i]);
+        return answer;
     }
 
     private static boolean rotateAndCheckPrime(int[] array) {
@@ -38,16 +37,14 @@ public class id35 {
 
     private static void rotateByOne(int[] array) {
         int temp = array[0];
-        for (int i = 0; i < array.length - 1; i++) {
+        for (int i = 0; i < array.length - 1; i++)
             array[i] = array[i + 1];
-        }
         array[array.length - 1] = temp;
     }
 
     private static boolean isPrime(long check) {
-        for (long i = 2; i < check; i++) {
+        for (long i = 2; i < check; i++)
             if (check % i == 0) return false;
-        }
         return true;
     }
 }

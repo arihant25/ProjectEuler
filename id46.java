@@ -2,7 +2,7 @@
 
 public class id46 {
     public static void main(String[] args) {
-        int n = 999999999;
+        int n = 100000000;
         boolean[] primeArr = new boolean[n + 1];
         for (int i = 2; i <= n; i++)
             primeArr[i] = true;

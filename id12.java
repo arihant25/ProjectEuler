@@ -6,8 +6,8 @@ public class id12 {
             sum = sum + number;
             number++;
             int count = 0;
-            for (int i=1; i<sum; i++) {
-                if (sum%i == 0) {
+            for (int i = 1; i < sum; i++) {
+                if (sum % i == 0) {
                     count++;
                     if (count == 500) {
                         System.out.println(sum);
